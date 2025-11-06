@@ -7,6 +7,7 @@ let currentImageIndex = 0;
 function initializeApp() {
     initNavigation();
     initNavbar();
+    
     generateHeroSection();
     initHeroSection();
 
@@ -424,6 +425,7 @@ function setupActionButtons() {
     });
 }
 
+
 // ===== NAVBAR FUNCTIONALITY =====
 function initNavbar() {
     const navbar = document.querySelector('.navbar');
@@ -442,9 +444,10 @@ function initNavbar() {
         }
     });
 
-    // Mobile menu functionality
+    // Mobile menu functionality - FIXED VERSION
     if (mobileMenu) {
-        mobileMenu.addEventListener('click', function() {
+        mobileMenu.addEventListener('click', function(e) {
+            e.stopPropagation(); // Important: event bubble stop karo
             const navLinks = document.querySelector('.nav-links');
             if (navLinks) {
                 navLinks.classList.toggle('active');
@@ -453,7 +456,7 @@ function initNavbar() {
         });
     }
 
-    // Close mobile menu when clicking outside
+    // Close mobile menu when clicking outside - FIXED VERSION
     document.addEventListener('click', (e) => {
         const navLinks = document.querySelector('.nav-links');
         const mobileMenuBtn = document.querySelector('.mobile-menu');
@@ -466,7 +469,7 @@ function initNavbar() {
         }
     });
 
-    // Active link highlighting and smooth scroll
+    // Close mobile menu when clicking on nav links
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
@@ -500,6 +503,8 @@ function initNavbar() {
             }
         });
     });
+
+    console.log('Navbar initialized - Mobile menu should work now');
 }
 
 // ===== HERO SECTION =====

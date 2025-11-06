@@ -2,7 +2,7 @@
 A responsive single-page website for GeeksforGeeks Campus Body at NITRA Technical Campus.
 
 # 📁 Project Structure
-text
+
 gfgntc/
 ├── index.html                 # Main homepage
 ├── events.html               # Events page
@@ -19,8 +19,8 @@ gfgntc/
 │   └── gallery/              # Gallery photos
 └── assets/
     └── logo.png              # Logo and brand assets
-🛠️ How to Update Content
-1. Update Navigation & Footer
+# 🛠️ How to Update Content
+## 1. Update Navigation & Footer
 Edit navigation-data.js:
 
 javascript
@@ -36,7 +36,7 @@ const navigationData = {
     about: {...},              // Update about section
     // ... other sections
 };
-2. Update Team Members
+## 2. Update Team Members
 Edit team-data.js:
 
 javascript
@@ -55,7 +55,7 @@ const teamData = [
     }
     // Add/remove team members as needed
 ];
-3. Update Gallery Images
+## 3. Update Gallery Images
 Edit gallery-data.js:
 
 javascript
@@ -70,7 +70,7 @@ const galleryData = [
     }
     // Add new images or update existing ones
 ];
-4. Update FAQ Section
+## 4. Update FAQ Section
 Edit faq-data.js:
 
 javascript
@@ -83,7 +83,7 @@ const faqData = [
     }
     // Add new FAQs or modify existing ones
 ];
-5. Update Events
+## 5. Update Events
 Edit events-data.js:
 
 javascript
@@ -98,7 +98,7 @@ const eventsData = [
     }
     // Update events list
 ];
-6. Update Contact Information
+## 6. Update Contact Information
 Edit navigation-data.js - contact section:
 
 javascript
@@ -121,17 +121,17 @@ contact: {
         ]
     }
 }
-🎨 Styling Updates
+# 🎨 Styling Updates
 Modify Colors & Theme
 Edit style.css:
 
-css
+## css
 :root {
     --primary-blue: #2563EB;    /* Change primary color */
     --secondary-green: #10B981; /* Change secondary color */
     --accent-amber: #F59E0B;    /* Change accent color */
 }
-Add New Sections
+## Add New Sections
 Add HTML structure in index.html
 
 Create corresponding data structure in navigation-data.js
@@ -140,7 +140,7 @@ Add generation function in script.js
 
 Style in style.css
 
-📱 Responsive Design
+## 📱 Responsive Design
 The website is fully responsive. Test on:
 
 Desktop (1200px+)
@@ -166,7 +166,7 @@ Update DNS settings
 
 Configure in GitHub Pages settings
 
-🔧 Maintenance Tips
+# 🔧 Maintenance Tips
 Regular Updates
 Update team members each semester
 
@@ -194,7 +194,7 @@ Use descriptive page titles
 
 Include relevant keywords in content
 
-📞 Support
+## 📞 Support
 For technical issues or updates:
 
 Check this README first
@@ -205,7 +205,7 @@ Test changes locally before deploying
 
 Contact the development team if needed
 
-📄 License
+## 📄 License
 This project is for GeeksforGeeks Campus Body, NITRA Technical Campus internal use.
 
 Last Updated: ${new Date().toLocaleDateString()}
