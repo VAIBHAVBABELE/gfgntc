@@ -5,13 +5,13 @@ const teamData = [
         name: "Vaibhav Babele",
         role: "Campus President",
         team: "core",
-        batch: "B.Tech CSE 2024",
+        batch: "B.Tech CSE 2026",
         description: "Leads the campus body and coordinates all activities. Passionate about building developer communities.",
         image: "images/team/vaibhav.jpg",
         social: {
-            linkedin: "https://linkedin.com/in/vaibhav-babele",
-            github: "https://github.com/vaibhavbabele",
-            instagram: "https://instagram.com/vaibhav_babele"
+            linkedin: "https://linkedin.com/in/vaibhavbabele",
+            github: "https://github.com/VAIBHAVBABELE",
+            instagram: "https://instagram.com/vaibhav_be_able"
         }
     },
     {

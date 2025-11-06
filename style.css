@@ -52,7 +52,7 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .nav-link {
@@ -100,36 +100,49 @@ body {
     box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
 }
 
+/* Mobile Menu Styles */
 .mobile-menu {
     display: none;
     font-size: 1.5rem;
-    color: #1E293B;
     cursor: pointer;
+    color: #1E293B;
+    z-index: 1001; /* Ensure it's above other elements */
+    position: relative;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
+/* Mobile menu visible only on small screens */
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-    
-    .join-btn {
-        display: none;
-    }
-    
     .mobile-menu {
         display: block;
     }
     
-    .brand-name {
+    .nav-links {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 50%;
+        background: #e1ecec;
+        flex-direction: column;
+        padding: 1rem 0;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
     
-    .navbar {
-        padding: 1rem;
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-links a {
+        display: block;
+        padding: 0.2rem;
+        width: 100%;
     }
 }
-
 /* Temporary body padding to see navbar */
 main {
     margin-top: 80px;
@@ -497,7 +510,7 @@ main {
 .no-events,
 .error-message {
     text-align: center;
-    padding: 3rem;
+    padding: 1rem;
     color: #64748B;
     background: #F8FAFC;
     border-radius: 12px;
